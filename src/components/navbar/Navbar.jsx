@@ -28,6 +28,7 @@ import "./navbar.css";
 import SearchIcon from "../../assets/imgs/search.png"
 import CartIcon from "../../assets/imgs/cart.png"
 import UserIcon from "../../assets/imgs/user.png"
+import { FaBars } from "react-icons/fa";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
