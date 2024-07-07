@@ -25,10 +25,9 @@
 // }
 import React, { useState } from 'react';
 import "./navbar.css";
-import { CiSearch } from "react-icons/ci";
-import { BsCart } from "react-icons/bs";
-import { MdOutlinePersonOutline } from "react-icons/md";
-import { FaBars } from "react-icons/fa";
+import SearchIcon from "../../assets/imgs/search.png"
+import CartIcon from "../../assets/imgs/cart.png"
+import UserIcon from "../../assets/imgs/user.png"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,9 +47,9 @@ export default function Navbar() {
         <li><a href="">Contact</a></li>
       </ul>
       <ul className='navitems'>
-        <li><CiSearch/></li>
-        <li><BsCart/></li>
-        <li><MdOutlinePersonOutline/></li>
+        <li><img src={SearchIcon} alt="" /></li>
+        <li><img src={CartIcon} alt="" /></li>
+        <li><img src={UserIcon} alt="" /></li>
       </ul>
       <div className='hamburger' onClick={toggleMenu}>
         <FaBars />
