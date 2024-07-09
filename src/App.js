@@ -13,7 +13,7 @@ function App() {
    <Router>
     <Navbar/>
     <Routes>
-      <Route path='/landingpage' element={<LandingPage/>}/>
+      <Route path='/' element={<LandingPage/>}/>
       <Route path='/cartpage' element={<CartPage/>}/>
       <Route path='/checkoutpage' element={<CheckoutPage/>}/>
     </Routes>
