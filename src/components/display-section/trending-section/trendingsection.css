@@ -1,0 +1,119 @@
+.trending{
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+height: auto;
+gap: 22px;
+opacity: 0px;
+
+}
+h1{
+font-family: Montserrat;
+font-size: 40px;
+font-weight: 500;
+line-height: 48.76px;
+color: #000000;
+margin-left: 100px;
+
+}
+.trending-div{
+gap: 17px;
+opacity: 0px;
+
+}
+.div-details{
+        gap: 10px;
+    opacity: 0px;
+}
+.first-letter{
+gap: 0px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.5px;
+text-align: left;
+
+}
+.second-letter{
+gap: 0px;
+opacity: 0px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+text-align: left;
+}
+.div-two{
+opacity: 0px;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 600;
+line-height: 17.07px;
+text-align: left;
+color: #000000;
+}
+/* Responsive Styles for different screen sizes */
+@media (max-width: 1024px) {
+    .trending {
+        flex-wrap: wrap;
+    }
+
+    .trending-div {
+        flex: 1 1 45%; /* Adjust to two columns */
+        max-width: 45%;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .first-letter {
+        font-size: 14px;
+    }
+
+    .second-letter, .div-two {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trending-div {
+        flex: 1 1 100%; /* Stack items in one column */
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .first-letter {
+        font-size: 12px;
+    }
+
+    .second-letter, .div-two {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .first-letter {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .second-letter, .div-two {
+        font-size: 8px;
+        text-align: center;
+    }
+}
+
+
+

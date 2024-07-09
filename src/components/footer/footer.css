@@ -1,11 +1,16 @@
 footer{
-    background-color: black;
-    padding: 20px;
+    /* width: Fixed 1,440px;
+    height: Fixed 252px; */
+    
+    padding: 48px 436px 48px 436px;
+    gap: 10px;
+    opacity: 0px;
+    background: #191919;
 }
 footer .footerlist{
     display: flex;
-    gap:80px;
-    justify-content: center;
+    gap:70px; 
+    justify-content: center; 
 }
 footer .footerlist li{
    list-style: none;
@@ -20,21 +25,23 @@ footer .iconslist{
     gap: 50px;
     margin-top: 50px;
     justify-content: center;
-}
+ }
 footer .iconslist li{
-    list-style:none;
-   
+    list-style:none;  
 }
 footer .iconslist li a{
     text-decoration: none;
     color: white;
 }
 footer p{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: 10px;
-    font-size: 10px;
+ 
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+line-height: 28.8px;
+text-align: center;
+color: #FFFFFF;
+
 }
 
 /* Media Queries */

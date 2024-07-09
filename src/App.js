@@ -3,7 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import LandingPage from './pages/LandingPage';
-import AboutPage from './pages/AboutPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
+
 
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
    <Router>
     <Navbar/>
     <Routes>
-      <Route path='/' element={<LandingPage/>}/>
-      <Route path='/about' element={<AboutPage/>}/>
+      <Route path='/landingpage' element={<LandingPage/>}/>
+      <Route path='/cartpage' element={<CartPage/>}/>
+      <Route path='/checkoutpage' element={<CheckoutPage/>}/>
     </Routes>
     <Footer/>
    </Router>

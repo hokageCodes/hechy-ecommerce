@@ -1,12 +1,13 @@
 import React from 'react'
 import HeroSection from '../components/hero-section/HeroSection'
-import AboutSection from '../components/about-section/AboutSection'
+import DisplaySection from '../components/display-section/DisplaySection'
+
 
 export default function LandingPage() {
   return (
     <div>
         <HeroSection/>
-        <AboutSection/>
+        <DisplaySection/>
     </div>
   )
 }

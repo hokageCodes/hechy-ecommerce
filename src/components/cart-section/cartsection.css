@@ -1,0 +1,227 @@
+.cart{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cart-one{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cart-one img{
+    width: 110.93px;
+    height: 104px;   
+}
+.cart-sum{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.cart-text h3{
+    font-family: Montserrat;
+    font-size: 14.97px;
+    font-weight: 700;
+    line-height: 18.24px;
+    text-align: left;
+}
+.cart-text p{
+    font-family: Montserrat;
+    font-size: 13.35px;
+    font-weight: 500;
+    line-height: 16.28px;
+    text-align: left;
+}
+.cart-text span{
+    font-family: Montserrat;
+    font-size: 13.35px;
+    font-weight: 500;
+    line-height: 16.28px;
+    text-align: left;
+}
+.cart-text span img{
+    width: 11.33px;
+    height: 12.04px;
+    border: 1.5px;
+    color: #586283
+}
+.cart-btn{
+    width: 351px;
+    height: 42px;
+    padding: 13.49px;
+    gap: 6.75px;
+    border-radius: 13.49px;
+    background: #91C900;
+    color: white;
+    text-align: center;
+    font-family: Montserrat;
+}
+.delete{
+    width: 11.33px;
+    height: 12.04px;
+    border: 1.5px;
+    opacity: 0px;
+}
+
+/* Products Section */
+#products {
+    opacity: 0px;   
+}
+#products h1 {
+    margin-left: 120px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48.76px;
+    text-align: left;
+    color: #000000;
+}
+.products-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.product-details {
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+.reviews {
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 10.97px;
+    text-align: left;
+    color: #000000;
+}
+.bigtext {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #000000;
+}
+.boldtext {
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 17.07px;
+    text-align: left;
+    color: #000000;
+}
+.smalltext {
+    font-family: Montserrat;
+    font-size: 7px;
+    font-weight: 400;
+    line-height: 10.97px;
+    text-align: left;
+    color: #979797;
+}
+.icon {
+    /* padding: 7px;
+    gap: 10px;
+    opacity: 0px; */
+    background: #91C900;
+    border-radius: 80%;
+}
+.products-one {
+    width: calc(25% - 40px); /* Adjust width for 4 items in a row */
+    box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .cart, .cart-one, .cart-sum {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart-one img {
+        width: 90px;
+        height: 85px;
+    }
+
+    .cart-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .cart-text h3 {
+        font-size: 13px;
+    }
+
+    .cart-text p {
+        font-size: 12px;
+    }
+
+    .products-one {
+        width: calc(50% - 40px); /* Adjust width for 2 items in a row */
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-one img {
+        width: 70px;
+        height: 65px;
+    }
+
+    .cart-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .cart-text h3 {
+        font-size: 12px;
+    }
+
+    .cart-text p {
+        font-size: 11px;
+    }
+
+    .products-one {
+        width: calc(100% - 40px); /* Adjust width for 1 item in a row */
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-one {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cart-sum {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cart-one img {
+        width: 60px;
+        height: 55px;
+    }
+
+    .cart-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .cart-text h3 {
+        font-size: 10px;
+    }
+
+    .cart-text p {
+        font-size: 9px;
+    }
+
+    .products-one {
+        width: 100%; /* Full width for small screens */
+    }
+
+    .reviews, .bigtext, .boldtext, .smalltext {
+        font-size: 8px;
+    }
+}

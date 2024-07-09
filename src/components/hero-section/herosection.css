@@ -1,0 +1,204 @@
+#hero {
+    display: flex;
+    gap: 10px;
+    opacity: 1; /* Assuming you want to make it visible */
+    flex-wrap: wrap;
+}
+#hero .timbu {
+    margin-left: 30px;
+}
+#hero .timbuimg img {
+    width: 100%;
+    max-width: 674px;
+    height: auto;
+    gap: 0px;
+    opacity: 1; /* Assuming you want to make it visible */
+}
+
+.timbu div {
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+}
+
+.timbu div p {
+    flex: 1;
+    max-width: 209px;
+    height: auto;
+    gap: 0px;
+    opacity: 1; /* Assuming you want to make it visible */
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    color: #000000;
+}
+
+.timbu div img {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    gap: 10px;
+    border-radius: 10px;
+    opacity: 1; /* Assuming you want to make it visible */
+    background: #91C900;
+}
+
+.timbu h1 {
+    margin-left: 50px;
+    width: 70%;
+    font-family: Montserrat, sans-serif;
+    font-size: 80px;
+    line-height: 100px;
+    color: #000000;
+   }
+.timbu p {
+ 
+    width: 60%;
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    color: #9CA3AF;
+}
+
+.btnone {
+    width: 100%;
+    max-width: 339px;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    border-radius: 90px;
+    opacity: 1; 
+    border: 1px solid #E5E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnone img {
+    width: 80px;
+    height: 80px;
+    gap: 0px;
+    opacity: 1; /* Assuming you want to make it visible */
+    border: 1px solid #FFFFFF;
+}
+
+.btnone span {
+    flex: 1;
+    /* width: auto;
+    height: auto; */
+    gap: 0px;
+    opacity: 1; /* Assuming you want to make it visible */
+    font-family: Montserrat, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+}
+
+.btntwo {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 1; /* Assuming you want to make it visible */
+    background: #91C900;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#herotexts {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1183px;
+    height: auto;
+    gap: 20px;
+    opacity: 1; 
+    flex-wrap: wrap;
+}
+#herotexts ul {
+    flex: 1;
+    max-width: 114px;
+    height: auto;
+    gap: 4px;
+    opacity: 1; 
+    list-style: none;
+    padding: 0;
+}
+
+#herotexts ul li {
+    list-style: none;
+}
+
+#herotexts ul .bigtext {
+    width: 100%;
+    height: auto;
+    gap: 0px;
+    opacity: 1; 
+    font-family: Montserrat, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.88px;
+    text-align: left;
+    color: #000000;
+}
+
+#herotexts ul .smalltext {
+    font-family: Montserrat, sans-serif;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    color: #000000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .timbu h1 {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .timbu p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btnone {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .btnone img {
+        margin-bottom: 10px;
+    }
+
+    #herotexts {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #herotexts ul .bigtext {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    #herotexts ul .smalltext {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
